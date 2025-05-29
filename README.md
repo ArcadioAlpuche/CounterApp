@@ -15,7 +15,7 @@ A simple and interactive counter application built with **Next.js** and **TypeSc
 - Multiple counter UI styles with toggleable options.
 - Responsive and accessible design.
 
-  ## Technologies Used
+## Technologies Used
 
 - React
 - TypeScript
