@@ -1,0 +1,18 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.svgButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.count{
+  font-size: 2.5rem;
+  color: #333;
+}
