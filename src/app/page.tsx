@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styles from './page.module.css';
 import SDesgin1 from './s-design1/s-design1';
+import SDesgin2 from './s-design2/s-design2';
 
 type CounterVariant = 'A' | 'B';
 
@@ -16,18 +17,28 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Counter App</h1>
+        <h1 className={styles.title}>Counter App {variant}</h1>
         {variant === 'A' ? (
           <SDesgin1 count={count} increment={increment} decrement={decrement} />
         ) : (
-          <CounterB count={count} increment={increment} decrement={decrement} />
+          <SDesgin2 count={count} setCount={setCount} />
         )}
         <button id="resetButton" className={styles.button} onClick={reset}>
           Reset
         </button>
-        <div>
-          <button onClick={() => setVariant('A')}>Use Counter A</button>
-          <button onClick={() => setVariant('B')}>Use Counter B</button>
+        <div className={styles.variantButtons}>
+          <button
+            className={`${styles.button} ${variant === 'A' ? styles.selected : ''}`}
+            onClick={() => setVariant('A')}
+          >
+            Counter A
+          </button>
+          <button
+            className={`${styles.button} ${variant === 'B' ? styles.selected : ''}`}
+            onClick={() => setVariant('B')}
+          >
+            Counter B
+          </button>
         </div>
       </div>
     </main>

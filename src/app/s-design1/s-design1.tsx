@@ -6,17 +6,20 @@ interface SDesgin1Props {
   decrement: () => void;
 }
 
-const SDesgin1: React.FC<SDesgin1Props> = ({ count, increment, decrement }) => {
+const SDesgin1 = ({ count, increment, decrement }: SDesgin1Props) => {
   return (
     <div className={styles.container}>
       <button className={styles.svgButton} onClick={increment}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 50 50"
-          width="25px"
-          height="25px"
+          width="25"
+          height="25"
+          viewBox="0 0 1024 1024"
         >
-          <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" />
+          <path
+            fill="currentColor"
+            d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zM736 480H544V288c0-17.664-14.336-32-32-32s-32 14.336-32 32v192H288c-17.664 0-32 14.336-32 32s14.336 32 32 32h192v192c0 17.664 14.336 32 32 32s32-14.336 32-32V544h192c17.664 0 32-14.336 32-32s-14.336-32-32-32z"
+          />
         </svg>
       </button>
       <p className={styles.count}>{count}</p>
@@ -26,7 +29,7 @@ const SDesgin1: React.FC<SDesgin1Props> = ({ count, increment, decrement }) => {
           height="25"
           viewBox="0 0 1024 1024"
           xmlns="http://www.w3.org/2000/svg"
-          fill="#000000"
+          fill="#333"
         >
           <rect x="0" y="0" width="1024" height="1024" rx="8" fill="none" />
           <path d="M512 0c283 0 512 229 512 512s-229 512-512 512S0 795 0 512S229 0 512 0zm0 961c247 0 448-202 448-449S759 64 512 64S64 265 64 512s201 449 448 449zm-35-417H288c-18 0-32-14-32-32s14-32 32-32h448c18 0 32 14 32 32s-14 32-32 32H477z" />
