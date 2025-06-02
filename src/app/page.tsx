@@ -10,7 +10,6 @@ type CounterVariant = 'A' | 'B' | 'C';
 export default function Home() {
   const [count, setCount] = useState<number>(0);
   const [variant, setVariant] = useState<CounterVariant>('A');
-  const [isAnimating, setIsAnimating] = useState(false);
 
   const increment = () => setCount((prev) => prev + 1);
   const decrement = () => setCount((prev) => prev - 1);

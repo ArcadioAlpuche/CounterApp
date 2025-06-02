@@ -17,7 +17,9 @@ const SDesign3 = ({ count, increment, decrement }: SDesign3Props) => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.description}>Use your keyboard arrow keys to increase or decrease count.</p>
+      <p className={styles.description}>
+        Use your keyboard arrow keys to increase or decrease count.
+      </p>
       <p className={styles.count}>{count}</p>
     </div>
   );
