@@ -4,7 +4,7 @@ A simple and interactive counter application built with **Next.js** and **TypeSc
 
 ## Live Demo
 
-[View the live app here!](https://your-project-name.vercel.app)
+[View the live app here!](https://counter-app-five-hazel.vercel.app/)
 
 ---
 
